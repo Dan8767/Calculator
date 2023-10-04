@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Digital-7','Poppins'; */
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    align-content: center;
+    justify-content: center;
+    column-gap: 5px;
+    row-gap: 5px;
+    background-color: white;
+    height: 530px;
+    width: 425px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.grid-item{
+    background-color: white;
+    color: black;
+    height: 70px;
+    line-height: 70px;
+    width: 100px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    user-select: none;
+}
+.grid-item:hover{
+    cursor: pointer;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+#screen{
+    background-color: white;
+    font-family: 'Digital-7';
+    font-size: 50px;
+    height: 140px;
+    width: 415px;
+    grid-column: 1 / 5;
+}
+#side-display{
+    height: 50px;
+    width: 415px;
+    box-shadow: none;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-bottom: none;
+    font-family: 'Digital-7';
+    font-size: 40px;
+    font-weight: 500;
+    text-align: right;
+    padding-right:5px;
+    color: rgba(0, 0, 0, 0.6);
+}
+#main-display{
+    height: 90px;
+    width: 415px;
+    box-shadow:none;   
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-top: none;
+    font-family: 'Digital-7';
+    font-size: 70px;
+    font-weight: 500;
+    text-align: right;
+    padding-right:5px ;
+}
+#item6{
+    background-color: #D13F30;
+    grid-area: 4 / 4 / 7 / 5;
+    height: 225px;
+    line-height: 225px;
+    color: white;
+}
+#item19{
+    grid-area: 3 / 4 / 4 / 5;
+    background-color: #D13F30;
+    color: white;
+}
+#item2,#item3, #item4, #item5{
+background-color: #647299;
+color: white;
+}
